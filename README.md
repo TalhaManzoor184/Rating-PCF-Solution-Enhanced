@@ -2,10 +2,11 @@ Glint
 
 A dependency-free rating control for Power Apps with full keyboard accessibility, six icon shapes, custom colors, and a configurable scale.
 
-<img width="542" height="498" alt="image" src="https://github.com/user-attachments/assets/b39edc86-fe52-4563-87e8-8c21c6435891" />
+<img width="542" height="498" alt="image" src="https://github.com/user-attachments/assets/b39edc86-fe52-4563-87e8-8c21c6435891" /></br>
 
-<img width="536" height="477" alt="image" src="https://github.com/user-attachments/assets/b441af6e-8bd7-48d9-b4f3-738bb82d5030" />
-<img width="382" height="882" alt="image" src="https://github.com/user-attachments/assets/f2a35c2e-0b72-4d9d-a025-67d5435af9e5" />
+<img width="536" height="477" alt="image" src="https://github.com/user-attachments/assets/b441af6e-8bd7-48d9-b4f3-738bb82d5030" /></br>
+
+<img width="382" height="882" alt="image" src="https://github.com/user-attachments/assets/f2a35c2e-0b72-4d9d-a025-67d5435af9e5" /></br>
 
 
 
