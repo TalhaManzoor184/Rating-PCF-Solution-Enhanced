@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<manifest>
+  <control
+    namespace="Talha"
+    constructor="StarRating"
+    version="1.0.0"
+    display-name-key="StarRatingPlus"
+    description-key="A fully configurable rating control with dynamic title, custom colors, half-star precision, hover labels and keyboard support."
+    control-type="standard">
+
+
+<external-service-usage enabled="false">
+</external-service-usage>
+
+<!-- Stores the actual rating -->
+<property
+  name="rating"
+  display-name-key="Rating"
+  description-key="Current rating value"
+  of-type="Whole.None"
+  usage="bound"
+  required="false" />
+
+<!-- Dynamic title text, fully user-controlled -->
+<property
+  name="title"
+  display-name-key="Title Text"
+  description-key="The heading text shown above the rating (leave blank to hide)"
+  of-type="SingleLine.Text"
+  usage="input"
+  required="false" />
+
+<!-- Shape dropdown -->
+<property
+  name="shape"
+  display-name-key="Rating Shape"
+  description-key="Choose the shape for the rating control"
+  of-type="Enum"
+  usage="input"
+  required="false">
+
+  <value name="Star" display-name-key="Star">0</value>
+  <value name="Heart" display-name-key="Heart">1</value>
+  <value name="Diamond" display-name-key="Diamond">2</value>
+  <value name="Circle" display-name-key="Circle">3</value>
+  <value name="Square" display-name-key="Square">4</value>
+  <value name="Triangle" display-name-key="Triangle">5</value>
+
+</property>
+
+<!-- Color dropdown -->
+<property
+  name="color"
+  display-name-key="Rating Color"
+  description-key="Choose the color for the rating control, or pick Custom to use your own hex color"
+  of-type="Enum"
+  usage="input"
+  required="false">
+
+  <value name="Gold" display-name-key="Gold">0</value>
+  <value name="Red" display-name-key="Red">1</value>
+  <value name="Blue" display-name-key="Blue">2</value>
+  <value name="Green" display-name-key="Green">3</value>
+  <value name="Purple" display-name-key="Purple">4</value>
+  <value name="Custom" display-name-key="Custom">5</value>
+
+</property>
+
+<!-- Free-text hex color, only used when color = Custom -->
+<property
+  name="customColor"
+  display-name-key="Custom Color (Hex)"
+  description-key="Hex color used when Rating Color is set to Custom, e.g. #FF6B00"
+  of-type="SingleLine.Text"
+  usage="input"
+  required="false" />
+
+<!-- How many icons to render: 5, 10, or anything in between -->
+<property
+  name="maxRating"
+  display-name-key="Max Rating"
+  description-key="Number of icons to display (e.g. 5 or 10)"
+  of-type="Whole.None"
+  usage="input"
+  required="false" />
+
+<!-- Icon size -->
+<property
+  name="size"
+  display-name-key="Icon Size"
+  description-key="Choose the size of the rating icons"
+  of-type="Enum"
+  usage="input"
+  required="false">
+
+  <value name="Small" display-name-key="Small">0</value>
+  <value name="Medium" display-name-key="Medium">1</value>
+  <value name="Large" display-name-key="Large">2</value>
+
+</property>
+
+<!-- Whether to show the "3 / 5" style counter text -->
+<property
+  name="showCounter"
+  display-name-key="Show Counter Text"
+  description-key="Show the numeric value (e.g. 3 / 5) below the icons"
+  of-type="TwoOptions"
+  usage="input"
+  required="false" />
+
+<!-- Whether to show a text label under the icons based on hover/selection -->
+<property
+  name="showLabels"
+  display-name-key="Show Rating Labels"
+  description-key="Show a text label (e.g. Excellent) that matches the hovered or selected value"
+  of-type="TwoOptions"
+  usage="input"
+  required="false" />
+
+<!-- Comma separated labels, one per rating level -->
+<property
+  name="labels"
+  display-name-key="Rating Labels"
+  description-key="Comma separated labels matching each rating level, e.g. Poor,Fair,Good,Very Good,Excellent"
+  of-type="SingleLine.Text"
+  usage="input"
+  required="false" />
+
+<!-- Click the current value again to clear it -->
+<property
+  name="allowClear"
+  display-name-key="Allow Clear On Re-click"
+  description-key="Clicking the currently selected icon again resets the rating to 0"
+  of-type="TwoOptions"
+  usage="input"
+  required="false" />
+
+<!-- Read-only / display-only mode -->
+<property
+  name="readOnly"
+  display-name-key="Read Only"
+  description-key="Display the rating without allowing the user to change it"
+  of-type="TwoOptions"
+  usage="input"
+  required="false" />
+
+<!-- Subtle pop animation on selection -->
+<property
+  name="enableAnimation"
+  display-name-key="Enable Animation"
+  description-key="Play a subtle pop animation when a rating is selected"
+  of-type="TwoOptions"
+  usage="input"
+  required="false" />
+
+<resources>
+  <code path="index.ts" order="1" />
+</resources>
+
+
+  </control>
+</manifest>
