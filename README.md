@@ -2,11 +2,11 @@ Glint
 
 A dependency-free rating control for Power Apps with full keyboard accessibility, six icon shapes, custom colors, and a configurable scale.
 
-
-
-Show Image Show Image Show Image
+<img width="542" height="498" alt="image" src="https://github.com/user-attachments/assets/b39edc86-fe52-4563-87e8-8c21c6435891" />
 
 <img width="536" height="477" alt="image" src="https://github.com/user-attachments/assets/b441af6e-8bd7-48d9-b4f3-738bb82d5030" />
+<img width="382" height="882" alt="image" src="https://github.com/user-attachments/assets/f2a35c2e-0b72-4d9d-a025-67d5435af9e5" />
+
 
 
 Overview
@@ -15,7 +15,8 @@ Glint is a lightweight rating control for model-driven apps, canvas apps, and Po
 
 Everything is configurable from the maker properties panel. No code changes required.
 
-Features
+**Features**
+
 Zero dependencies — no React, no icon fonts, no CSS frameworks
 Fully keyboard accessible — exposed as an ARIA slider; arrow keys, Home and End all work
 Dynamic heading text — set your own, or leave blank to hide it entirely
@@ -28,9 +29,10 @@ Click-to-clear — click the selected icon again to reset to zero
 Read-only mode — display existing ratings without allowing edits
 Three icon sizes — small, medium, large
 
-Optional selection animation
-Screenshots
-<!-- Add a GIF here showing shapes/colors switching and keyboard navigation -->
+**Optional selection animation**
+
+<img width="388" height="886" alt="image" src="https://github.com/user-attachments/assets/03b35ecb-4bad-423f-8773-13ac96fa6a9a" />
+
 
 Installation
 
@@ -43,11 +45,13 @@ Publish all customizations
 Usage
 Open the form editor for your table
 Select the whole number column you want to bind the rating to
-Under Components, choose + Component → Sitara
+Under Components, choose + Component → StarRatingPlus
 Enable it for Web, Phone, and Tablet as needed
 Configure the properties below, then save and publish
-Properties
+
+**Properties**
 Property	Type	Default	Description
+
 rating	Whole Number (bound)	—	The column that stores the rating value
 title	Text	Rate your experience	Heading shown above the icons. Leave blank to hide
 shape	Enum	Star	Star, Heart, Diamond, Circle, Square, or Triangle
@@ -65,7 +69,7 @@ enableAnimation	Two Options	true	Subtle pop animation on selection
 
 Note: rating binds to a Whole Number column. Binding it to a decimal or text column will cause the control to fail to initialize.
 
-Example configurations
+**Example configurations
 
 Clean five-star rating
 
@@ -97,7 +101,7 @@ maxRating   = 5
 size        = Small
 readOnly    = true
 showCounter = true
-Accessibility
+Accessibility**
 
 The icon group is focusable and exposed to assistive technology as an ARIA slider with aria-valuemin, aria-valuemax, and aria-valuenow. Keyboard users can:
 
